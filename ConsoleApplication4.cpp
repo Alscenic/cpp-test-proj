@@ -22,14 +22,16 @@ void enemy_spawn(std::string name,float health, float damage) {
 }
 
 void enemy_spawn(std::string name,float damage) { // 
-	enemy_spawn(name,100.0f,damage); // Takes this function's input, but supplements a certain value to make it easier in some situations.
-	// Say normal enemies start at 100 health, so you would only user the first function for bosses. Instead of typing 100.0f for all of them,
-	// just use this function. Plus if you want to change it later, you don't have to go through 20 different enemies to change 100.0f to whatever.
+	enemy_spawn(name,100.0f,damage); // Takes this function's input, but supplements a certain value to make it easier in
+	// some situations. Say normal enemies start at 100 health, so you would only user the first function for bosses. Instead
+	// of typing 100.0f for all of them, just use this function. Plus if you want to change it later, you don't have to go
+	// through 20 different enemies to change 100.0f to whatever.
 }
 
 
 // ---------
-// These functions are essentially just different versions of "main()" - I change out the function that the real main() runs so I can run a different test.
+// These functions are essentially just different versions of "main()" - I change out the function that the real main()
+// runs so I can run a different test.
 
 // Cryptography prototype test test
 void main_crypt_iha1() {
@@ -56,7 +58,8 @@ void main_stringtest1() {
 
 // Testing a basic search function
 void main_strcontains() {
-	std::string haystack = "This is a haystack. It's not that large, but it's there."; // Make the haystack (what we're searching in)
+	std::string haystack = "This is a haystack. It's not that large, but it's there."; // Make the haystack
+	// (what we're searching in)
 	std::string needle = "it's not that large"; // Make the needle (what we're searching for)
 	std::cout << "Haystack: " << std::endl << haystack; // What the haystack is
 	std::cout << std::endl << std::endl;

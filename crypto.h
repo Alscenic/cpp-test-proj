@@ -45,7 +45,8 @@ namespace math {
 	}
 
 	///<summary>Gives the nth digit index in an integer n.</summary>
-	int clip(int n,int index) { // Two of the same functions? How? All you have to do is change the arguments between them. Example in ConsoleApplication4.cpp.
+	int clip(int n,int index) { // Two of the same functions? How? All you have to do is change the arguments between them.
+		// Example in ConsoleApplication4.cpp.
 		int* digits = clip(n);
 		return digits[index];
 	}
@@ -105,7 +106,8 @@ namespace basics {
 	// This is a class. It's an object. Objects hold information (variables) and can do things (functions.)
 	// Usually their functions only matter to the classes themselves. 
 
-	template <class T> // This line basically says that this class can be of any variable type (we don't want to copy and paste this entire thing just to be able to use more than one variable type.)
+	template <class T> // This line basically says that this class can be of any variable type
+	// (we don't want to copy and paste this entire thing just to be able to use more than one variable type.)
 	class list {
 	public:
 		list(T v) {
@@ -117,7 +119,8 @@ namespace basics {
 		///<summary>Automagically adds a new int value to the list.</summary>
 		void add(T i) { // Function declaration
 			listitem* item = new listitem; // [see struct under "private:" declarations]
-			item->val = i; // Notice the arrow thing. This is what's used to get parts from a pointer. (Read into pointers, they're pretty important)
+			item->val = i; // Notice the arrow thing. This is what's used to get parts from a pointer.
+			// (Read into pointers, they're pretty important)
 			if (first == NULL) {
 				first = item;
 			} else {
@@ -466,7 +469,8 @@ vector2<float> operator *(vector2<float> &lhs,vector2<float> &rhs) {
 	return result;
 }
 
-vector2<float> operator /(vector2<float> &lhs,vector2<float> &rhs) { // Quick note: division is slow, you should always try to multiply eg (x * 0.5f) vs (x / 2)
+vector2<float> operator /(vector2<float> &lhs,vector2<float> &rhs) {
+	// Quick note: division is slow, you should always try to multiply (i.e. x * 0.5f) vs (x / 2)
 	vector2<float> result = lhs;
 	result.x /= rhs.x;
 	result.y /= rhs.y;
