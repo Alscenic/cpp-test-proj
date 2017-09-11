@@ -1,7 +1,8 @@
+This project most likely isn't for you but feel free to snoop around and learn some stuff
 
 
 
-Here's a bunch of random things to note.
+Here's a bunch of random things to note for who it's supposed to be for
 
 
 This project contains a bunch of code I experimented with over the Summer. All of it is mine and quite a
